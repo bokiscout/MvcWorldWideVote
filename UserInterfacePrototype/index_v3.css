@@ -1,4 +1,9 @@
- /* global preferences*/
+/*######################################
+  #                                    #
+  #           Global Preferences       #
+  #                                    #
+  ######################################
+*/
   body{
     min-width: 620px;
   }
@@ -6,14 +11,19 @@
   .navbar{
     min-width: 620px;
   }
- /* global preferences end here*/
 
 
 
-
-
- /*top menu style start here */
-
+/*######################################
+  #                                    #
+  #           Top Menu                 #
+  #                                    #
+  ######################################
+*/
+/*  ###################
+    # fix when resize #
+    ###################
+*/
 @media (max-width: 1199px) {
   .navbar .input-group {
     width: 378px !important;
@@ -70,6 +80,16 @@
       float: right;
     }
 
+@media (max-width: 750px) {
+  .navbar .input-group {
+    width: 380px !important;
+  }
+}
+
+/*  ##################
+    # default values #
+    ##################
+*/
  .titleImage{
      display: none;
   }
@@ -81,12 +101,6 @@
       margin-left: 0px !important;
     }
 
-}
-
-@media (max-width: 750px) {
-  .navbar .input-group {
-    width: 380px !important;
-  }
 }
 
 .blackButton{
@@ -140,10 +154,17 @@
 
 .dropdown{
   float: left;
-  margin-right: 10px;
+  /*margin-right: 10px;*/
 }
 
 
+
+/*######################################
+  #                                    #
+  #              Title                 #
+  #                                    #
+  ######################################
+*/
 .content{
   margin-top: 50px;
 }
@@ -169,13 +190,14 @@
   /* margin-right: 200px; */
 }
 
-/* title style end here */
 
 
-
-
-/* questionnaire style start here */
-
+/*######################################
+  #                                    #
+  #           Questionaries            #
+  #                                    #
+  ######################################
+*/
 .questionnaireOdd{
   background: rgb(34, 34, 34);
   padding-bottom: 45px;
@@ -199,12 +221,29 @@
     background-color: rgba(245, 245, 245, 0.05);
 }
 
-/* questionnaire style start here */
+.panel{
+  margin-bottom: 40px;
+}
+
+#ChartCloseButton{
+    position: relative;
+    top: -25px;
+    right: -11px;
+}
+
+.charts{
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
 
 
 
-
-/* pagination style start here */
+/*######################################
+  #                                    #
+  #           Pagination               #
+  #                                    #
+  ######################################
+*/
 .navPagination{
   position: relative;
   top: -50px;
@@ -214,12 +253,15 @@
   padding: 0px;
   margin: 0px;
 }
-/* pagination style end here */
 
 
 
-
-/* progress bar*/
+/*######################################
+  #                                    #
+  #          Progress Bar              #
+  #                                    #
+  ######################################
+*/
 .progress{
     height: 3px;
     margin-bottom: 24px;
@@ -230,12 +272,20 @@
     box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
     margin-top: 0
 }
-/*progress bar ends here*/
 
 
 
-
-/*here start footer*/
+/*######################################
+  #                                    #
+  #              Footer                #
+  #                                    #
+  ######################################
+*/
+@media (max-width: 991px) {
+  .footer-img {
+    display: none !important;
+  }
+}
 
 .myfooter{
     background: #2A569D;
@@ -275,5 +325,3 @@
 .footer-img{
   margin-top: 15px;
 }
-
-/*here end footer

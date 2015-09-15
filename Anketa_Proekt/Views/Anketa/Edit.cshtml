@@ -1,0 +1,74 @@
+﻿@model Anketa_Proekt.Models.Anketa
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit Pool</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>Pool</h4>
+        <hr />
+        @Html.ValidationSummary(true)
+        @Html.HiddenFor(model => model.id_anketa)
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Question</label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.prasanje)
+                @Html.ValidationMessageFor(model => model.prasanje)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Discription</label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.opis_a)
+                @Html.ValidationMessageFor(model => model.opis_a)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Begin date</label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.datum_kreiranje)
+                @Html.ValidationMessageFor(model => model.datum_kreiranje)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">End date</label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.kraen_datum)
+                @Html.ValidationMessageFor(model => model.kraen_datum)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Multichoice or Singlechoice</label>
+            <div class="col-md-10">
+                @Html.CheckBoxFor(model => model.isSelected)
+                @Html.ValidationMessageFor(model => model.multi_choice)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
