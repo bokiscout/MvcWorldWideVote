@@ -17,3 +17,4 @@ World Wide Vote's purpose is to fulfill the daily needs of thorough answers and 
 The whole UI is build using bootstrap and javascript with primary idea to be as unclutered as posible and to scale well od displays of any size.
 
 #### Some screenshots of our website:
+Screenshots can be fount at: http://imgur.com/a/cpfSW#0
