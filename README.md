@@ -1,7 +1,7 @@
 #WorldWideVote
 Website for e-voting build using ASP.Net MVC
 
-#### What is the purpose of this website:
+#### This website is intended to:
 World Wide Vote's purpose is to fulfill the daily needs of thorough answers and fast elections.
 
 #### What functionalities our website can offer:
